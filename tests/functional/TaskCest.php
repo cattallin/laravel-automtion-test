@@ -9,6 +9,11 @@ class TaskCest
         $I->amOnPage('/');
     }
 
+    public function verificareTaskCuEroare(FunctionalTester $I)
+    {
+        $I->see('Task 100', 'div');
+    }
+
     // tests
     public function seDeschidePagina(FunctionalTester $I)
     {
