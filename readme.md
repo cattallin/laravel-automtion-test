@@ -10,16 +10,14 @@ php verison 7.3.12
 
     composer install
 
-    php artisan migrate
+    cp .env.example .env
+    -> set database in .env file and in .env.testing
 
-    php artisan serve
+    php artisan migrate
 
 
     Run tests command:
-
     php vendor/bin/codecept run
 
     File with test:
-    /tests/functinal/TaskCest.php
-
-[Complete Tutorial](https://laravel.com/docs/5.2/quickstart)
+    tests/functinal/TaskCest.php
